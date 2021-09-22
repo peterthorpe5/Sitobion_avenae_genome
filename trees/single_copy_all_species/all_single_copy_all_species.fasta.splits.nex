@@ -1,0 +1,51 @@
+#nexus
+
+BEGIN Taxa;
+DIMENSIONS ntax=13;
+TAXLABELS
+[1] 'AG'
+[2] 'Dno'
+[3] 'Pentalonia_nigronervosa'
+[4] 'DV'
+[5] 'Eriosoma_lanigerum'
+[6] 'ACYPI'
+[7] 'Mpe'
+[8] 'S_avenae'
+[9] 'Mca'
+[10] 'Rpa'
+[11] 'FBpp'
+[12] 'Aphis_goss'
+[13] 'rhopalosiphum_maidis'
+;
+END; [Taxa]
+
+BEGIN Splits;
+DIMENSIONS ntax=13 nsplits=23;
+FORMAT labels=no weights=yes confidences=no intervals=no;
+MATRIX
+	100	 2,
+	100	 7,
+	100	 9,
+	100	 7 9,
+	100	 2 7 9,
+	100	 6,
+	100	 8,
+	100	 6 8,
+	100	 2 6 7 8 9,
+	100	 3,
+	100	 2 3 6 7 8 9,
+	100	 4,
+	100	 11,
+	100	 4 11,
+	100	 5,
+	100	 4 5 11,
+	100	 1 10 12 13,
+	100	 10,
+	100	 13,
+	100	 10 13,
+	100	 1 12,
+	100	 12,
+	100	 1,
+;
+END; [Splits]
+
